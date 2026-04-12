@@ -7,26 +7,31 @@ interface Row {
 }
 
 const rows: Row[] = [
+  // Both ✅
   { feature: "Java 21 + Spring Boot 3.4.1", free: true, pro: true },
   { feature: "Angular 21 Standalone Components", free: true, pro: true },
   { feature: "MSSQL 2022 + Flyway Migrations", free: true, pro: true },
   { feature: "Multi-stage Docker Builds", free: true, pro: true },
-  { feature: "JWT Auth (Access + Refresh Tokens)", free: "Basic", pro: true },
+  { feature: "Nginx SPA Hosting + Security Headers", free: true, pro: true },
+  { feature: "MSSQL Healthcheck (no startup race)", free: true, pro: true },
   { feature: "Refresh Token Rotation", free: true, pro: true },
   { feature: "BCrypt Password Hashing", free: true, pro: true },
   { feature: "User Profile Management", free: true, pro: true },
   { feature: "Basic Customer CRUD", free: true, pro: true },
   { feature: "Dashboard Stats API", free: true, pro: true },
   { feature: "Angular Material UI", free: true, pro: true },
-  { feature: "401 Race Condition Protection", free: true, pro: true },
-  { feature: "Auth Guard (JWT exp validation)", free: true, pro: true },
+  { feature: "401 Race Condition Protection (Interceptor)", free: true, pro: true },
+  { feature: "Auth Guard (JWT exp validation + redirect)", free: true, pro: true },
+  // Basic vs Enhanced
+  { feature: "JWT Auth (Access + Refresh Tokens)", free: "Basic", pro: "Enhanced" },
+  // PRO only
   { feature: "Stripe Checkout + Webhook Handling", free: false, pro: true },
-  { feature: "Stripe Billing Portal", free: false, pro: true },
+  { feature: "Stripe Billing Portal (self-service)", free: false, pro: true },
   { feature: "Magic Link (Passwordless Auth)", free: false, pro: true },
   { feature: "Post-Payment Auto-Login via Magic Link", free: false, pro: true },
   { feature: "Email Service (Thymeleaf HTML templates)", free: false, pro: true },
   { feature: "IP Rate Limiting (brute-force protection)", free: false, pro: true },
-  { feature: "Server-Side Pagination", free: false, pro: true },
+  { feature: "Server-Side Pagination (Spring Pageable + MatPaginator)", free: false, pro: true },
   { feature: "Strict RBAC (ADMIN / MANAGER / USER)", free: false, pro: true },
   { feature: "Entity Ownership Enforcement (403)", free: false, pro: true },
   { feature: "Signal Cache (no duplicate HTTP calls)", free: false, pro: true },
@@ -34,6 +39,9 @@ const rows: Row[] = [
   { feature: "13 Test Files / 88 Test Cases", free: false, pro: true },
   { feature: "Mockito Strict Stubs + ArgumentCaptor", free: false, pro: true },
   { feature: "Vitest Frontend Test Suite", free: false, pro: true },
+  { feature: "Fail-Fast JWT Secret Validation", free: false, pro: true },
+  // License
+  { feature: "License", free: "MIT", pro: "Commercial" },
 ];
 
 function CellIcon({ value }: { value: boolean | string }) {
