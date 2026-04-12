@@ -1,19 +1,30 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { HeroSection } from "@/components/HeroSection";
+import { VideoSection } from "@/components/VideoSection";
+import { TechStackSection } from "@/components/TechStackSection";
+import { FreeFeatures } from "@/components/FreeFeatures";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { MathSection } from "@/components/MathSection";
+import { PricingSection } from "@/components/PricingSection";
+import { ArchitectureSection } from "@/components/ArchitectureSection";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background text-foreground">
+      <HeroSection />
+      <VideoSection />
+      <TechStackSection />
+      <FreeFeatures />
+      <ComparisonTable />
+      <MathSection />
+      <PricingSection />
+      <ArchitectureSection />
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
