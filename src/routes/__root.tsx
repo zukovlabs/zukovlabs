@@ -31,11 +31,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Enterprise Java SaaS Starter Kit — Ship in Days" },
+      { name: "description", content: "Production-ready Java 21 + Spring Boot 3.4.1 + Angular 21 + MSSQL + Docker Compose boilerplate. Clone, configure, and ship your SaaS." },
+      { name: "author", content: "ZukovLabs" },
+      { property: "og:title", content: "Enterprise Java SaaS Starter Kit" },
+      { property: "og:description", content: "Production-ready fullstack boilerplate for Java developers. Ship your SaaS in days, not months." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -44,6 +44,19 @@ export const Route = createRootRoute({
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap",
       },
     ],
   }),
