@@ -34,11 +34,15 @@ export const Route = createRootRoute({
       { title: "Enterprise Java SaaS Starter Kit — Ship in Days" },
       { name: "description", content: "Production-ready Java 21 + Spring Boot 3.4.1 + Angular 21 + MSSQL + Docker Compose boilerplate. Clone, configure, and ship your SaaS." },
       { name: "author", content: "ZukovLabs" },
-      { property: "og:title", content: "Enterprise Java SaaS Starter Kit" },
-      { property: "og:description", content: "Production-ready fullstack boilerplate for Java developers. Ship your SaaS in days, not months." },
+      { property: "og:title", content: "Enterprise Java SaaS Starter Kit — Ship in Days" },
+      { property: "og:description", content: "Production-ready Java 21 + Spring Boot 3.4.1 + Angular 21 + MSSQL + Docker Compose boilerplate. Clone, configure, and ship your SaaS." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Enterprise Java SaaS Starter Kit — Ship in Days" },
+      { name: "twitter:description", content: "Production-ready Java 21 + Spring Boot 3.4.1 + Angular 21 + MSSQL + Docker Compose boilerplate. Clone, configure, and ship your SaaS." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2ce46d8a-35f5-4e6b-af1e-e18369ea8307" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2ce46d8a-35f5-4e6b-af1e-e18369ea8307" },
     ],
     links: [
       {
