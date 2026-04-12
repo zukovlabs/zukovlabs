@@ -2,7 +2,7 @@ import { Github, Twitter } from "lucide-react";
 
 const GITHUB_URL = "https://github.com/zukovlabs/enterprise-java-saas-starter-kit";
 const DEVTO_URL = "https://dev.to/zukovlabs/angular-21-spring-boot-34-in-docker-the-plumbing-nobody-shows-you-5a7l";
-const TWITTER_URL = "https://x.com/ZukovLabs";
+const TWITTER_URL = "https://x.com/RomansZukovs";
 
 export function Footer() {
   return (
