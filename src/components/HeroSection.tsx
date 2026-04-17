@@ -20,7 +20,7 @@ export function HeroSection() {
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
           Production-ready fullstack boilerplate — Java 21 + Spring Boot 3.4.1 + Angular 21 + MSSQL + Docker Compose. Clone, configure, and ship.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+<div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href={PRO_URL} target="_blank" rel="noopener noreferrer">
             <Button variant="glow" size="lg" className="text-base px-8 py-6 font-semibold cursor-pointer">
               Get PRO Version
@@ -32,6 +32,9 @@ export function HeroSection() {
             </Button>
           </a>
         </div>
+        <p className="mt-4 text-sm text-muted-foreground">
+          €149 · One-time payment · No subscription
+        </p>
       </div>
     </section>
   );
