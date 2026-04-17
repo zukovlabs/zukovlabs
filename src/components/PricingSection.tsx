@@ -14,13 +14,17 @@ const highlights = [
 
 export function PricingSection() {
   return (
-    <section className="px-6 py-20 max-w-2xl mx-auto text-center">
+<section className="px-6 py-20 max-w-2xl mx-auto text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
         One purchase. <span className="text-primary">Ship forever.</span>
       </h2>
-      <p className="text-muted-foreground mb-10">
+      <p className="text-muted-foreground mb-6">
         Not a subscription. Buy once, build unlimited projects.
       </p>
+      <div className="mb-8">
+        <div className="text-5xl font-bold text-primary mb-2">€149</div>
+        <p className="text-sm text-muted-foreground">one-time payment · lifetime updates · commercial use</p>
+      </div>
       <div className="rounded-xl border border-primary/30 bg-surface p-8 shadow-[0_0_60px_var(--glow)]">
         <div className="grid grid-cols-2 gap-3 mb-8 text-left">
           {highlights.map((h) => (
