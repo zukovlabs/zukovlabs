@@ -28,6 +28,17 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <div className="fixed top-2 right-2 z-50">
+        <button
+          onClick={() => {
+            posthog.capture("test_manual_click");
+            console.log("PostHog event fired");
+          }}
+          className="rounded-md bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground shadow-lg hover:opacity-90"
+        >
+          Test PostHog
+        </button>
+      </div>
       <HeroSection />
       <VideoSection />
       <TechStackSection />
