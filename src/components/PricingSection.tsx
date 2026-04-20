@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { track } from "@vercel/analytics";
 
 const PRO_URL = "https://zukovlabs.lemonsqueezy.com/checkout/buy/0dbe2f00-c90f-414b-b2d1-4e589f487058";
 
@@ -34,7 +35,7 @@ export function PricingSection() {
             </div>
           ))}
         </div>
-        <a href={PRO_URL} target="_blank" rel="noopener noreferrer">
+        <a href={PRO_URL} target="_blank" rel="noopener noreferrer" onClick={() => track("click_pro_bottom")}>
           <Button variant="glow" size="lg" className="text-base px-10 py-6 font-semibold w-full sm:w-auto cursor-pointer">
             Get PRO Version
           </Button>

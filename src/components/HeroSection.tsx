@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { track } from "@vercel/analytics";
 
 const PRO_URL = "https://zukovlabs.lemonsqueezy.com/checkout/buy/0dbe2f00-c90f-414b-b2d1-4e589f487058";
 const GITHUB_URL = "https://github.com/zukovlabs/enterprise-java-saas-starter-kit";
@@ -21,12 +22,12 @@ export function HeroSection() {
           Production-ready fullstack boilerplate — Java 21 + Spring Boot 3.4.1 + Angular 21 + MSSQL + Docker Compose. Clone, configure, and ship.
         </p>
 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href={PRO_URL} target="_blank" rel="noopener noreferrer">
+          <a href={PRO_URL} target="_blank" rel="noopener noreferrer" onClick={() => track("click_pro_top")}>
             <Button variant="glow" size="lg" className="text-base px-8 py-6 font-semibold cursor-pointer">
               Get PRO Version
             </Button>
           </a>
-          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" onClick={() => track("click_github")}>
             <Button variant="outline_glow" size="lg" className="text-base px-8 py-6 font-semibold cursor-pointer">
               View Free on GitHub
             </Button>
