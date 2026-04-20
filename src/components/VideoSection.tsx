@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { track } from "@vercel/analytics";
+import posthog from "posthog-js";
 
 export function VideoSection() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -10,7 +10,7 @@ export function VideoSection() {
       if (trackedRef.current) return;
       if (document.activeElement === iframeRef.current) {
         trackedRef.current = true;
-        track("video_play");
+        posthog.capture("video_play");
       }
     };
     window.addEventListener("blur", handleBlur);
