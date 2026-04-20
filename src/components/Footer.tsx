@@ -1,5 +1,5 @@
 import { Github, Twitter } from "lucide-react";
-import { track } from "@vercel/analytics";
+import posthog from "posthog-js";
 
 const GITHUB_URL = "https://github.com/zukovlabs/enterprise-java-saas-starter-kit";
 const DEVTO_URL = "https://dev.to/zukovlabs/angular-21-spring-boot-34-in-docker-the-plumbing-nobody-shows-you-5a7l";
@@ -19,10 +19,10 @@ export function Footer() {
           <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
             <Github className="h-5 w-5" />
           </a>
-          <a href={DEVTO_URL} target="_blank" rel="noopener noreferrer" onClick={() => track("click_devto")} className="text-muted-foreground hover:text-foreground transition-colors text-sm font-mono" aria-label="Dev.to article">
+          <a href={DEVTO_URL} target="_blank" rel="noopener noreferrer" onClick={() => posthog.capture("click_devto")} className="text-muted-foreground hover:text-foreground transition-colors text-sm font-mono" aria-label="Dev.to article">
             DEV.to
           </a>
-          <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer" onClick={() => track("click_twitter")} className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Twitter/X">
+          <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer" onClick={() => posthog.capture("click_twitter")} className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Twitter/X">
             <Twitter className="h-5 w-5" />
           </a>
         </div>
