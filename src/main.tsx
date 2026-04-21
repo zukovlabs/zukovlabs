@@ -4,7 +4,7 @@ import posthog from "posthog-js";
 import "./styles.css";
 import App from "./App";
 
-posthog.init("phc_BJphvDtHWgUUMg8ytuBmR2K3WxsCJDmMSHk9Yu5k259h", {
+posthog.init("phc_BJphvDtHWgUUmg8ytuBmR2K3WxsCJDmMSHk9Yu5k259h", {
   api_host: "https://eu.i.posthog.com",
   capture_pageview: true,
 });
