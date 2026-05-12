@@ -13,7 +13,7 @@ export function Footer() {
           <h2 className="text-sm font-mono uppercase tracking-wider text-foreground">Support & Questions</h2>
           <p className="text-sm text-muted-foreground">
             Have a question? Reach out at{" "}
-            <a href="mailto:support@zukovlabs.com" className="text-foreground hover:text-primary transition-colors">
+            <a href="mailto:romanzukov1983@gmail.com" className="text-foreground hover:text-primary transition-colors">
               support@zukovlabs.com
             </a>
           </p>
