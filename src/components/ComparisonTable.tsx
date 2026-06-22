@@ -9,7 +9,7 @@ interface Row {
 const rows: Row[] = [
   // Both ✅
   { feature: "Java 21 + Spring Boot 3.4.1", free: true, pro: true },
-  { feature: "Angular 21 Standalone Components", free: true, pro: true },
+  { feature: "Angular 22 Standalone Components", free: true, pro: true },
   { feature: "MSSQL 2022 + Flyway Migrations", free: true, pro: true },
   { feature: "Multi-stage Docker Builds", free: true, pro: true },
   { feature: "Nginx SPA Hosting + Security Headers", free: true, pro: true },

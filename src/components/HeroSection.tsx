@@ -19,7 +19,7 @@ export function HeroSection() {
           <span className="text-primary">in days, not months</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-          Production-ready fullstack boilerplate — Java 21 + Spring Boot 3.4.1 + Angular 21 + MSSQL + Docker Compose. Clone, configure, and ship.
+          Production-ready fullstack boilerplate — Java 21 + Spring Boot 3.4.1 + Angular 22 + MSSQL + Docker Compose. Clone, configure, and ship.
         </p>
 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href={PRO_URL} target="_blank" rel="noopener noreferrer" onClick={() => posthog.capture("click_pro_top")}>
