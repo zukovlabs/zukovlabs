@@ -34,7 +34,7 @@ export function HeroSection() {
           </a>
         </div>
         <p className="mt-4 text-sm text-muted-foreground">
-          €149 · One-time payment · No subscription
+          <span className="line-through">€149</span> €99 · One-time payment · No subscription
         </p>
       </div>
     </section>
