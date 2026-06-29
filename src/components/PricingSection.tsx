@@ -23,10 +23,12 @@ export function PricingSection() {
         Not a subscription. Buy once, build unlimited projects.
       </p>
       <div className="mb-8">
-        <div className="flex items-center justify-center gap-3 mb-2">
-          <span className="text-3xl text-muted-foreground line-through">€149</span>
-          <span className="text-5xl font-bold text-primary">€99</span>
+        <div className="mb-2">
+          <span className="text-5xl font-bold text-primary">€149</span>
         </div>
+        <p className="text-sm font-semibold text-primary mb-2">
+          🔥 Special Release Offer: Use code ANGULAR22 at checkout to get it for €99! (Valid through July)
+        </p>
         <p className="text-sm text-muted-foreground">one-time payment · lifetime updates · commercial use</p>
       </div>
       <div className="rounded-xl border border-primary/30 bg-surface p-8 shadow-[0_0_60px_var(--glow)]">
