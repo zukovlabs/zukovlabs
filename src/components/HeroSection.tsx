@@ -34,7 +34,7 @@ export function HeroSection() {
           </a>
         </div>
         <p className="mt-4 text-sm text-muted-foreground">
-          <span className="line-through">€149</span> €99 · One-time payment · No subscription
+          €149 · One-time payment. 🔥 Special Release Offer: Use code ANGULAR22 at checkout for €50 off! (Valid through July)
         </p>
       </div>
     </section>
